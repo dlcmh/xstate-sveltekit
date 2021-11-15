@@ -1,14 +1,16 @@
 <script>
   import Footer from '$lib/components/Footer.svelte';
+  import Nav from '$lib/components/navigations/Nav.svelte';
 </script>
 
 <div class="container">
   <section>
-    <nav>
-      <a href="/">Home</a>
-      |
-      <a href="/sandbox">Sandbox</a>
-    </nav>
+    <Nav
+      links={[
+        { href: '/', title: 'Home' },
+        { href: '/sandbox', title: 'Sandbox' },
+      ]}
+    />
     <main>
       <slot />
     </main>
