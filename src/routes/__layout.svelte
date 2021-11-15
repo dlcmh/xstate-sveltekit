@@ -4,6 +4,11 @@
 
 <div class="container">
   <section>
+    <nav>
+      <a href="/">Home</a>
+      |
+      <a href="/sandbox">Sandbox</a>
+    </nav>
     <main>
       <slot />
     </main>
@@ -26,7 +31,7 @@
   /* with display: grid */
   section {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
   }
 </style>
