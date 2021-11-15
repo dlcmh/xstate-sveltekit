@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^4.31.1
   '@typescript-eslint/parser': ^4.31.1
+  '@xstate/svelte': ^0.2.0
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
@@ -15,6 +16,11 @@ specifiers:
   svelte-preprocess: ^4.9.4
   tslib: ^2.3.1
   typescript: ^4.4.3
+  xstate: ^4.26.0
+
+dependencies:
+  '@xstate/svelte': 0.2.0_svelte@3.44.1+xstate@4.26.0
+  xstate: 4.26.0
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -287,6 +293,22 @@ packages:
       '@typescript-eslint/types': 4.33.0
       eslint-visitor-keys: 2.1.0
     dev: true
+
+  /@xstate/svelte/0.2.0_svelte@3.44.1+xstate@4.26.0:
+    resolution: {integrity: sha512-SwPEz0oY6T4B4xvFFqJsuXfNyA0PoEhkrbO3jDQ6fXhwx/x9+Y38mM5w+qGnPtczI7UJ+T0XKWn5GJJsH4JbRA==}
+    peerDependencies:
+      '@xstate/fsm': ^1.0.0
+      svelte: ^3.24.1
+      xstate: ^4.11.0
+    peerDependenciesMeta:
+      '@xstate/fsm':
+        optional: true
+      xstate:
+        optional: true
+    dependencies:
+      svelte: 3.44.1
+      xstate: 4.26.0
+    dev: false
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1650,6 +1672,10 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: true
+
+  /xstate/4.26.0:
+    resolution: {integrity: sha512-l0tfRBhVYM17D6IWT4pVOzzN9kY/5lnPWCe4LXjJ3F9HCrJOPBn6tPRAb9mapSRBS8cOeByJFDCRSNopgaoC5w==}
+    dev: false
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
