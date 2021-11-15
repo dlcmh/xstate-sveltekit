@@ -3,6 +3,30 @@
 </script>
 
 <div class="container">
-  <slot />
-  <Footer />
+  <section>
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </section>
 </div>
+
+<!-- https://kiranworkspace.com/how-to-stick-footer-to-bottom-of-page/ -->
+<style>
+  /* with display: flex */
+  /* section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+  } */
+
+  /* with display: grid */
+  section {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  }
+</style>
